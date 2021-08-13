@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Filters</title>
+
+	<style>
+     .my_filter{
+		 filter: sepia(0.6);
+     }
+
+
+    .my_filter:hover{
+
+      animation: 4s myfilteranimation;
+
+    }
+
+
+
+
+     @keyframes myfilteranimation
+		{
+		 20%{
+	        -webkit-filter: hue-rotate(15deg);
+	       }
+		 40%{
+	         -webkit-filter: hue-rotate(30deg);
+	       }
+		60%{
+	         -webkit-filter: hue-rotate(45deg);
+	       }
+			80%{
+	         -webkit-filter: hue-rotate(60deg);
+	       }
+		100%{
+	         -webkit-filter: hue-rotate(90deg);
+	       }
+
+     }
+
+	</style>
+	
+	
+</head>
+<body>
+
+<img class="my_filter" src="img/flower.jpg" alt="flower">
+
+</body>
+</html>
