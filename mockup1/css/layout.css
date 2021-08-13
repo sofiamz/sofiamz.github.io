@@ -90,6 +90,17 @@ margin-left: 10px;
 	float: center;
 	align-items: center;
 }
+
+.imgtrio:hover{animation-name: changescale;
+	animation-duration: 1s;
+	
+}
+
+@keyframes changescale{
+	from {transform: scale(1,1)}
+	to{transform: scale(1.3,1.3)}
+	
+}
 /* [class^="imgtrio"] element that starts with */
 div [class^="imgtrio"]:first-of-type {
     margin: 0px;
