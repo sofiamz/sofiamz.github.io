@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Transitions</title>
+
+   
+
+   <style>
+
+
+   	body{
+   		font-family: sans-serif;
+   		font-size:60px;
+   		color:#FFF;
+   	}
+
+   	.cardholder{
+        text-align: center;
+
+   	}
+      
+    .card{
+    	position: relative;
+       background-color:lavender;
+       display: inline-block;
+    }
+
+    .card img{
+      width:100%;
+      height:auto;
+	  filter: grayscale(1);
+	filter: blur(0.3);
+    }
+
+
+    .center {
+
+     padding: 60% 0;
+     text-align: center;
+    }
+
+
+
+    .card:hover img{
+		filter: blur(0);
+		filter: grayscale(0);
+
+    }
+
+    .card_text{
+    	margin:0;
+    }
+
+
+
+   </style>
+
+</head>
+<body>
+
+
+
+
+	<div class="cardholder">
+       <div class="card">
+       	  <img src="img/headerimg.jpeg" alt="header image">
+       </div>
+	</div>
+
+</body>
+</html>
