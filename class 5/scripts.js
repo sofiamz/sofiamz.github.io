@@ -9,8 +9,6 @@ window.onload = function (){
 	var newContent = document.createElement("h1");
 	newContent.innerHTML= "this is content";
 	contentDiv.appendChild(newContent);
-
-	
 	console.log(newContent)
 	
 	function turnTextBlue(){
@@ -28,11 +26,10 @@ window.onload = function (){
 	
 	setTimeout(changeBackground, 1800);
 	
-	$(document).ready(function(){
-					  
+	$(document).ready(function(){				  
 	var toggled= false;
-	
-					  function toggledContent(){
+
+		function toggledContent(){
 		if (toggled){
 			$("#content").hide();
 			toggled=false
@@ -43,13 +40,11 @@ window.onload = function (){
 	}
 	$("#button").on('click', function(){
 		toggledContent();
-	});
-					  
+	});				  
 	});
 	
 	
-	$(document).ready(function(){
-					  
+	$(document).ready(function(){				  
 	var toggled= false;
 	
 					function toggledImage(){
@@ -63,9 +58,111 @@ window.onload = function (){
 	}
 	$("#button1").on('click', function(){
 		toggledImage();
+	});			  
 	});
-					  
+	
+	$(document).ready(function(){
+		var toggled=false;
+		
+				function toggledDarkmode(){
+			if (toggled){
+			$("#content").fadeOut (function(){
+				$("nav").fadeOut();
+			});
+				toggled = false;
+			} else {
+				$("#content").fadeIn(function(){
+					$("#nav").fadein();
+				});
+			toggled= true;
+			}
+				
+			}
+				//fadeOut(function(){
+				//$("nav").fadeOut();
+			//});
+		//toggled=false;
+			//} else{
+			//	$("#content").fadeIn(function(){
+			//		$("nav").fadeIn();
+			//	});
+			//toggled= true
+			//}
+	$("#button2").on('click', function(){
+				toggledDarkmode();
+	$ ('#content').css('background-color', "midnightblue")
+	$("#content").css('body',"white");	
+				});		
+	
 	});
+
+	$(document).ready(function(){
+		var toggled=false;
+		
+				function toggledGreen(){
+			if (toggled){
+			$("#content").fadeOut (function(){
+				$("nav").fadeOut();
+			});
+				toggled = false;
+			} else {
+				$("#content").fadeIn(function(){
+					$("#nav").fadein();
+				});
+			toggled= true;
+			}
+				
+			}
+				//fadeOut(function(){
+				//$("nav").fadeOut();
+			//});
+		//toggled=false;
+			//} else{
+			//	$("#content").fadeIn(function(){
+			//		$("nav").fadeIn();
+			//	});
+			//toggled= true
+			//}
+	$("#button3").on('click', function(){
+				toggledGreen();
+	$ ('#content').css('background-color', "MediumAquamarine")
+				});		
+	
+	});
+	
+	$(document).ready(function(){
+		var toggled=false;
+		
+				function toggledText(){
+			if (toggled){
+			$("#content").fadeOut (function(){
+				$("nav").fadeOut();
+			});
+				toggled = false;
+			} else {
+				$("#content").fadeIn(function(){
+					$("#nav").fadein();
+				});
+			toggled= true;
+			}
+				
+			}
+				//fadeOut(function(){
+				//$("nav").fadeOut();
+			//});
+		//toggled=false;
+			//} else{
+			//	$("#content").fadeIn(function(){
+			//		$("nav").fadeIn();
+			//	});
+			//toggled= true
+			//}
+	$("#button4").on('click', function(){
+				toggledText();
+	$ ('#content').css( 'font-size', "120%")
+				});		
+	
+	});//'font-color', "0, 128, 128",
 	
 	//jQuery(document).ready(function(){
 	//console.log(jQuery("li"));	
