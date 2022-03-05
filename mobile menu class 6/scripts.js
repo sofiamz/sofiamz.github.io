@@ -14,8 +14,6 @@ window.onload = function (){
 	function turnTextBlue(){
 	newContent.style.color = "140,216,230";
 	contentDiv.style.color= "royalblue";
-
-		
 	}
 	
 	setTimeout(turnTextBlue, 1500);
@@ -26,4 +24,13 @@ window.onload = function (){
 	
 	setTimeout(changeBackground, 1800);
 	
+	$(document).ready(function(){
 	
+		$(".mobileMenuButton").on('click', function(){
+		$("nav.mobile").css('display', 'block');	
+		});
+		$(".mobileExit").on('click', function(){
+	   $("nav.mobile").css('display', 'none');
+		});
+	});
+}

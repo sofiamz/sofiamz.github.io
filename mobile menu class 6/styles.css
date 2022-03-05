@@ -130,12 +130,13 @@ nav.mobile{
   position:fixed;
   top:0px;
   left:0vw;
+	
   width:100vw;
   height:100vh;
   z-index:10;
   background-color:rgba(70,130,180,1.00);
   transition:1s left;
-  display: none;
+	display:none;
 }
 nav.mobile ul{
   display:block;
