@@ -1,0 +1,198 @@
+body{
+  background-color:rgb(240,240,240);
+  padding:0;
+  margin:0;
+  line-height: 1em;
+
+}
+
+*,p{
+  font-family: helvetica,arial,sans-serif;
+  font-weight: 300;
+}
+
+p,h1,h2,h3,h4,h5{
+  line-height: 1em;
+}
+
+header{
+width:100%;
+display: flex;
+background-color:rgba(140,216,230,1.00);
+justify-content: space-between;
+align-items: center;
+
+}
+
+nav{
+
+}
+
+nav ul{
+  display: flex;
+  margin:10px;
+}
+nav ul li{
+  list-style: none;
+  padding:0px 20px;
+
+}
+
+nav ul li a{
+  text-decoration: none;
+  color:white;
+  font-weight: bolder;
+}
+
+nav ul li a:hover{
+  color:rgb(200,200,200);
+}
+.logo{
+  width:20%;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  margin:10px;
+}
+.logo h2{
+  color:white;
+}
+
+#content{
+  margin:0px auto;
+  width:1024px;
+  background-color:white;
+  padding:20px 50px;
+}
+
+#content h2{
+  font-size:2.5em;
+  font-weight: bold;
+}
+
+.headerImage{
+  width:40%;
+	align-items: center;
+}
+
+#containerImage{
+	width: 460px;
+	height: 245px;
+}
+
+#button{
+  position: fixed;
+  right:0px;
+  bottom:0px;
+  z-index: 1;
+  margin:20px;
+  width:120px;
+  height:40px;
+  background-color:rgba(0,255,255,1.00);
+  display: flex;
+  justify-content:center;
+  align-items: center;
+border-radius: 5px;
+cursor:pointer;
+}
+#button:hover{
+  background-color:rgb(0,0,0);
+  color:white;
+}
+/* Welcome box */
+.welcomeBlackOut{
+  position: fixed;
+  top:0px;
+  left:0px;
+  background-color: black;
+  display:flex;
+  justify-content:center;
+  align-items: center;
+  height:100%;
+  width:100%;
+  display:none;
+  z-index:10;
+
+}
+.welcomeBlackOut h3{
+  color:white;
+  font-family:arial;
+  font-size:4em;
+}
+
+.desktopNavigation{
+  display: block;
+}
+
+
+
+nav.mobile{
+  position:fixed;
+  top:0px;
+  left:0vw;
+  width:100vw;
+  height:100vh;
+  z-index:10;
+  background-color:rgba(70,130,180,1.00);
+  transition:1s left;
+  display: none;
+}
+nav.mobile ul{
+  display:block;
+  margin:0px;
+  padding:0px;
+}
+nav.mobile ul li{
+  width:100%;
+  height:30px;
+  text-align: center;
+  margin:20 0px;
+  padding:0px;
+}
+.mobileMenuButton{
+  display: none;
+  cursor: pointer;
+}
+.mobileExit{
+  position:absolute;
+  right:0px;
+  top:0px;
+  margin:10px;
+  padding:10px;
+  color:white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+
+@media only screen and (max-width: 568px) {
+h1,h2,h3{
+  line-height: 1em;
+}
+	
+	
+	
+.logo{
+  width:65%
+}
+  #content{
+    padding:10px;
+    width:calc(100% - 20px);
+  }
+  .desktopNavigation{
+    display: none;
+  }
+
+  nav.mobile.active{
+    left:0vw;
+  }
+
+  .mobileMenuButton{
+    display: block;
+    padding:20px;
+    color:white;
+    font-weight: 900;
+  }
+	
+
+}
