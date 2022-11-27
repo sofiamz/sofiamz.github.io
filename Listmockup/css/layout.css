@@ -1,0 +1,105 @@
+@charset "UTF-8";
+/* CSS Document */
+body{
+  font-family: sans-serif;
+  color:#0a1e40;
+
+}
+
+
+
+.outer{
+  text-align: center;
+}
+
+.page{
+
+  max-width: 1200px;
+  width: 100%;
+  display: inline-block;
+}
+.topofpage{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-items: center;
+	justify-content: flex-start;
+	height: 80px;
+	background-color: white; 
+}
+
+.logo{
+background-color: white;
+max-width: 250px;
+margin-left: 10px;	
+
+}
+.logoimg{
+	width: 60%;
+}
+.layout{
+	width:100%;
+	height: 100px;
+	background-color: #f5eaea;
+
+}
+
+
+/* HERO IMAGE */
+.hero_content{
+	font-size:28px;
+	text-align: center;
+}
+.hero_text_headline{
+	font-weight: bold;
+	font-size: 34px;
+	color:#2d71d5;
+}
+
+.hero_content img{
+	width:100%;
+}
+
+
+/* IMAGE TRIO COMPONENT */
+
+
+.imgtrio{
+	align-items: center;
+	height: 500px;
+	overflow:auto;
+	margin-top: 340px;
+	margin-bottom: 320px;
+	text-align: left;
+	float: center;
+}
+
+.imgtrio .section{
+	color: #F7C34A;
+   text-transform: uppercase;
+   font-weight: bold;
+}
+
+.imgtrio img{
+	float: center;
+	width: 90%;
+}
+
+.ads{
+	background-color: #9ad0f7;
+	height: 100%;
+	float: center;
+	margin-top: 340px;
+	margin-bottom: 320px;
+	align-items: center;
+}
+/* [class^="imgtrio"] element that starts with */
+div [class^="imgtrio"]:first-of-type {
+    margin: 0px;
+   
+}
+
+div [class^="imgtrio"]:last-of-type {
+    margin: 0px;
+   
+}
